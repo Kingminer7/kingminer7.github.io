@@ -33,9 +33,9 @@ jobs:
         uses: Bhacaz/checkout-files@v2
         with:
           files:
-            css/ 
-            js/ 
-            html/
+            css/*.css
+            js/*.js
+            html/*.html
             index.html
 
       - name: Setup Pages

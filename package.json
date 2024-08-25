@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "cd src && tsc --watch",
+    "serve": "live-server ./build"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "tsc": "^2.0.4"
+  }
+}

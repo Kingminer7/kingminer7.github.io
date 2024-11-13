@@ -1,0 +1,179 @@
+[main] Building folder: /Users/km7dev/geode-cgs/build 
+[build] Starting build
+[proc] Executing command: /usr/local/bin/cmake --build /Users/km7dev/geode-cgs/build --config Debug --target all --
+[build] [1/2   0% :: 0.016] Re-checking globbed directories...
+[build] [18/224   0% :: 0.727] Building CXX object _deps/tuliphook-build/libraries/dobby/CMakeFiles/Dobby.dir/source/InstructionRelocation/arm/InstructionRelocationARM.cc.o
+[build] [19/224   0% :: 0.728] Building CXX object _deps/tuliphook-build/libraries/dobby/CMakeFiles/Dobby.dir/source/core/assembler/assembler-arm.cc.o
+[build] [20/224   1% :: 0.728] Building CXX object _deps/tuliphook-build/libraries/dobby/CMakeFiles/Dobby.dir/source/core/arch/CpuRegister.cc.o
+[build] [21/224   1% :: 0.731] Building CXX object _deps/tuliphook-build/libraries/dobby/CMakeFiles/Dobby.dir/source/core/codegen/codegen-arm.cc.o
+[build] [22/224   2% :: 0.819] Building CXX object _deps/tuliphook-build/libraries/dobby/CMakeFiles/Dobby.dir/source/core/assembler/assembler-arm64.cc.o
+[build] [23/224   2% :: 0.833] Building CXX object _deps/tuliphook-build/libraries/dobby/CMakeFiles/Dobby.dir/source/core/codegen/codegen-arm64.cc.o
+[build] [24/224   3% :: 0.864] Building C object _deps/capstone-build/CMakeFiles/capstone.dir/MCInstrDesc.c.o
+[build] [25/224   3% :: 0.923] Building CXX object _deps/tuliphook-build/libraries/dobby/CMakeFiles/Dobby.dir/source/core/arch/CpuFeature.cc.o
+[build] [26/224   4% :: 0.964] Building C object _deps/capstone-build/CMakeFiles/capstone.dir/MCRegisterInfo.c.o
+[build] [27/224   4% :: 0.976] Building CXX object _deps/tuliphook-build/libraries/dobby/CMakeFiles/Dobby.dir/source/core/assembler/assembler.cc.o
+[build] [28/224   4% :: 0.981] Building CXX object _deps/tuliphook-build/libraries/dobby/CMakeFiles/Dobby.dir/source/MemoryAllocator/AssemblyCodeBuilder.cc.o
+[build] [29/224   5% :: 1.007] Building CXX object _deps/tuliphook-build/libraries/dobby/CMakeFiles/Dobby.dir/source/InstructionRelocation/arm64/InstructionRelocationARM64.cc.o
+[build] [30/224   5% :: 1.015] Building C object _deps/capstone-build/CMakeFiles/capstone.dir/MCInst.c.o
+[build] [31/224   6% :: 1.020] Building C object _deps/capstone-build/CMakeFiles/capstone.dir/Mapping.c.o
+[build] [32/224   6% :: 1.051] Building CXX object _deps/tuliphook-build/libraries/dobby/CMakeFiles/Dobby.dir/source/MemoryAllocator/CodeBuffer/CodeBufferBase.cc.o
+[build] [33/224   7% :: 1.054] Building C object _deps/capstone-build/CMakeFiles/capstone.dir/SStream.c.o
+[build] [34/224   7% :: 1.065] Building C object _deps/capstone-build/CMakeFiles/capstone.dir/utils.c.o
+[build] [35/224   8% :: 1.084] Building C object _deps/capstone-build/CMakeFiles/capstone.dir/MCInstPrinter.c.o
+[build] [36/224   8% :: 1.096] Building C object _deps/capstone-build/CMakeFiles/capstone.dir/arch/X86/X86ATTInstPrinter.c.o
+[build] [37/224   8% :: 1.176] Building C object _deps/capstone-build/CMakeFiles/capstone.dir/cs.c.o
+[build] [38/224   9% :: 1.184] Building C object _deps/capstone-build/CMakeFiles/capstone.dir/arch/X86/X86InstPrinterCommon.c.o
+[build] [39/224   9% :: 1.270] Building C object _deps/capstone-build/CMakeFiles/capstone.dir/arch/X86/X86Module.c.o
+[build] [40/224  10% :: 1.435] Building C object _deps/capstone-build/CMakeFiles/capstone.dir/arch/X86/X86Disassembler.c.o
+[build] [41/224  10% :: 1.637] Building C object _deps/capstone-build/CMakeFiles/capstone.dir/arch/X86/X86IntelInstPrinter.c.o
+[build] [42/224  11% :: 3.435] Building C object _deps/capstone-build/CMakeFiles/capstone.dir/arch/X86/X86Mapping.c.o
+[build] [43/224  11% :: 3.678] Building C object _deps/capstone-build/CMakeFiles/capstone.dir/arch/X86/X86DisassemblerDecoder.c.o
+[build] [44/224  12% :: 4.208] Building CXX object _deps/tuliphook-build/src/CMakeFiles/TulipHook.dir/convention/CallingConvention.cpp.o
+[build] [45/224  12% :: 4.544] Building CXX object _deps/fmt-build/CMakeFiles/fmt.dir/src/os.cc.o
+[build] [46/224  12% :: 5.457] Building CXX object _deps/tuliphook-build/src/CMakeFiles/TulipHook.dir/convention/MacosIntelConvention.cpp.o
+[build] [47/224  13% :: 5.498] Building CXX object _deps/tuliphook-build/src/CMakeFiles/TulipHook.dir/Misc.cpp.o
+[build] [48/224  13% :: 5.505] Building CXX object _deps/tuliphook-build/src/CMakeFiles/TulipHook.dir/convention/DefaultConvention.cpp.o
+[build] [49/224  14% :: 5.766] Building CXX object _deps/tuliphook-build/src/CMakeFiles/TulipHook.dir/target/Target.cpp.o
+[build] [50/224  14% :: 5.934] Building CXX object _deps/tuliphook-build/src/CMakeFiles/TulipHook.dir/assembler/X64Assembler.cpp.o
+[build] [51/224  15% :: 5.937] Building CXX object _deps/tuliphook-build/src/CMakeFiles/TulipHook.dir/assembler/BaseAssembler.cpp.o
+[build] [52/224  15% :: 6.077] Building CXX object _deps/tuliphook-build/src/CMakeFiles/TulipHook.dir/Main.cpp.o
+[build] [53/224  16% :: 6.089] Building CXX object _deps/tuliphook-build/src/CMakeFiles/TulipHook.dir/assembler/ArmV8Assembler.cpp.o
+[build] [54/224  16% :: 6.148] Building C object _deps/minizip-ng-build/CMakeFiles/minizip.dir/mz_crypt.c.o
+[build] [55/224  16% :: 6.289] Building C object _deps/minizip-ng-build/CMakeFiles/minizip.dir/mz_os.c.o
+[build] [56/224  17% :: 6.336] Building C object _deps/minizip-ng-build/CMakeFiles/minizip.dir/mz_strm.c.o
+[build] [57/224  17% :: 6.338] Building C object _deps/minizip-ng-build/CMakeFiles/minizip.dir/mz_strm_buf.c.o
+[build] [58/224  18% :: 6.397] Building CXX object _deps/tuliphook-build/src/CMakeFiles/TulipHook.dir/assembler/X86Assembler.cpp.o
+[build] [59/224  18% :: 6.419] Building CXX object _deps/tuliphook-build/src/CMakeFiles/TulipHook.dir/Wrapper.cpp.o
+[build] [60/224  19% :: 6.500] Building C object _deps/minizip-ng-build/CMakeFiles/minizip.dir/mz_strm_mem.c.o
+[build] [61/224  19% :: 6.555] Building C object _deps/minizip-ng-build/CMakeFiles/minizip.dir/mz_strm_split.c.o
+[build] [62/224  20% :: 6.680] Building C object _deps/minizip-ng-build/CMakeFiles/minizip.dir/mz_strm_libcomp.c.o
+[build] /Users/km7dev/geode-cgs/build/_deps/minizip-ng-src/mz_strm_libcomp.c:119:13: warning: variable 'total_in' set but not used [-Wunused-but-set-variable]
+[build]   119 |     int32_t total_in = 0;
+[build]       |             ^
+[build] 1 warning generated.
+[build] /Users/km7dev/geode-cgs/build/_deps/minizip-ng-src/mz_strm_libcomp.c:119:13: warning: variable 'total_in' set but not used [-Wunused-but-set-variable]
+[build]   119 |     int32_t total_in = 0;
+[build]       |             ^
+[build] 1 warning generated.
+[build] [63/224  20% :: 6.692] Building CXX object _deps/tuliphook-build/src/CMakeFiles/TulipHook.dir/generator/Generator.cpp.o
+[build] [64/224  20% :: 6.702] Building CXX object _deps/tuliphook-build/src/CMakeFiles/TulipHook.dir/Pool.cpp.o
+[build] [65/224  21% :: 6.792] Building C object _deps/md4c-build/src/CMakeFiles/md4c.dir/md4c.c.o
+[build] [66/224  21% :: 6.805] Building C object _deps/minizip-ng-build/CMakeFiles/minizip.dir/mz_zip_rw.c.o
+[build] [67/224  22% :: 6.824] Building C object _deps/minizip-ng-build/CMakeFiles/minizip.dir/mz_strm_os_posix.c.o
+[build] [68/224  22% :: 6.869] Building C object _deps/minizip-ng-build/CMakeFiles/minizip.dir/mz_zip.c.o
+[build] [69/224  23% :: 6.920] Linking CXX static library _deps/tuliphook-build/libraries/dobby/libDobby.a
+[build] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: for architecture: x86_64 file: _deps/tuliphook-build/libraries/dobby/libDobby.a(InstructionRelocationARM.cc.o) has no symbols
+[build] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: for architecture: x86_64 file: _deps/tuliphook-build/libraries/dobby/libDobby.a(InstructionRelocationARM64.cc.o) has no symbols
+[build] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: for architecture: x86_64 file: _deps/tuliphook-build/libraries/dobby/libDobby.a(CpuRegister.cc.o) has no symbols
+[build] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: for architecture: x86_64 file: _deps/tuliphook-build/libraries/dobby/libDobby.a(assembler-arm.cc.o) has no symbols
+[build] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: for architecture: x86_64 file: _deps/tuliphook-build/libraries/dobby/libDobby.a(assembler-arm64.cc.o) has no symbols
+[build] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: for architecture: x86_64 file: _deps/tuliphook-build/libraries/dobby/libDobby.a(codegen-arm.cc.o) has no symbols
+[build] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: for architecture: x86_64 file: _deps/tuliphook-build/libraries/dobby/libDobby.a(codegen-arm64.cc.o) has no symbols
+[build] [69/224  23% :: 6.972] Building C object _deps/minizip-ng-build/CMakeFiles/minizip.dir/mz_strm_wzaes.c.o
+[build] [69/224  24% :: 6.987] Building C object _deps/minizip-ng-build/CMakeFiles/minizip.dir/mz_strm_pkcrypt.c.o
+[build] [69/224  24% :: 7.008] Linking C static library _deps/md4c-build/src/libmd4c.a
+[build] [69/224  25% :: 7.012] Building CXX object loader/launcher/mac/CMakeFiles/FakeGeode.dir/FakeGeode.cpp.o
+[build] [70/224  25% :: 7.060] Building CXX object loader/launcher/mac/CMakeFiles/GeodeBootstrapper.dir/Bootstrapper.cpp.o
+[build] [70/224  25% :: 7.234] Building C object _deps/minizip-ng-build/CMakeFiles/minizip.dir/mz_compat.c.o
+[build] [70/224  26% :: 7.283] Building C object _deps/minizip-ng-build/CMakeFiles/minizip.dir/mz_os_posix.c.o
+[build] [70/224  26% :: 7.579] Linking C static library _deps/capstone-build/libcapstone.a
+[build] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: for architecture: x86_64 file: _deps/capstone-build/libcapstone.a(X86ATTInstPrinter.c.o) has no symbols
+[build] [70/224  27% :: 7.761] Building CXX object _deps/fmt-build/CMakeFiles/fmt.dir/src/format.cc.o
+[build] [71/224  27% :: 7.847] Building CXX object _deps/tuliphook-build/src/CMakeFiles/TulipHook.dir/target/MacosM1Target.cpp.o
+[build] [71/224  28% :: 7.884] Building CXX object _deps/tuliphook-build/src/CMakeFiles/TulipHook.dir/target/MacosIntelTarget.cpp.o
+[build] [71/224  28% :: 7.908] Linking CXX static library _deps/fmt-build/libfmtd.a
+[build] [72/224  29% :: 8.026] Linking CXX shared library loader/launcher/mac/Geode.dylib
+[build] [73/224  29% :: 8.049] Building C object _deps/minizip-ng-build/CMakeFiles/minizip.dir/mz_crypt_apple.c.o
+[build] [74/224  29% :: 8.182] Linking CXX shared library /Users/km7dev/geode-cgs/bin/nightly/GeodeBootstrapper.dylib
+[build] [74/224  30% :: 8.198] Linking C static library _deps/minizip-ng-build/libminizip.a
+[build] [74/224  30% :: 8.465] Building CXX object _deps/tuliphook-build/src/CMakeFiles/TulipHook.dir/generator/ArmV8Generator.cpp.o
+[build] [74/224  31% :: 9.228] Building CXX object _deps/tuliphook-build/src/CMakeFiles/TulipHook.dir/Handler.cpp.o
+[build] [74/224  31% :: 9.533] Building CXX object _deps/tuliphook-build/src/CMakeFiles/TulipHook.dir/target/DarwinTarget.cpp.o
+[build] [74/224  32% :: 9.671] Building CXX object _deps/tuliphook-build/src/CMakeFiles/TulipHook.dir/generator/X86Generator.cpp.o
+[build] [74/224  32% :: 9.765] Building CXX object _deps/tuliphook-build/src/CMakeFiles/TulipHook.dir/generator/X64Generator.cpp.o
+[build] [75/224  33% :: 10.027] Linking CXX static library _deps/tuliphook-build/src/libTulipHook.a
+[build] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: for architecture: x86_64 file: _deps/tuliphook-build/src/libTulipHook.a(MacosM1Target.cpp.o) has no symbols
+[build] [75/224  33% :: 11.348] Running Codegen
+[build] [84/224  33% :: 18.178] Building CXX object loader/test/main/CMakeFiles/TestMod.dir/cmake_pch_arm64.hxx.pch
+[build] [84/224  34% :: 18.191] Building CXX object loader/test/dependency/CMakeFiles/TestDependency.dir/cmake_pch_x86_64.hxx.pch
+[build] [84/224  34% :: 18.198] Building CXX object loader/test/dependency/CMakeFiles/TestDependency.dir/cmake_pch_arm64.hxx.pch
+[build] [88/224  35% :: 18.205] Building CXX object loader/test/main/CMakeFiles/TestMod.dir/cmake_pch_x86_64.hxx.pch
+[build] [92/224  35% :: 19.544] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/bindings/Geode/GeneratedSource.cpp.o
+[build] FAILED: bindings/CMakeFiles/GeodeBindings.dir/bindings/Geode/GeneratedSource.cpp.o 
+[build] /usr/bin/clang++  -I/Users/km7dev/geode-cgs/build/bindings/bindings -I/Users/km7dev/bindings/bindings/include -I/Users/km7dev/geode-cgs/loader/include -I/Users/km7dev/geode-cgs/loader/include/Geode/cocos/include -I/Users/km7dev/geode-cgs/loader/include/Geode/cocos/extensions -I/Users/km7dev/geode-cgs/loader/include/Geode/fmod -isystem /Users/km7dev/geode-cgs/build/_deps/fmt-src/include -isystem /Users/km7dev/geode-cgs/build/_deps/tuliphook-src/include -isystem /Users/km7dev/geode-cgs/build/_deps/result-src/include -isystem /Users/km7dev/geode-cgs/build/_deps/json-src/include -g -std=gnu++20 -arch arm64 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=10.15 -fvisibility=hidden -ffunction-sections -fdata-sections -MD -MT bindings/CMakeFiles/GeodeBindings.dir/bindings/Geode/GeneratedSource.cpp.o -MF bindings/CMakeFiles/GeodeBindings.dir/bindings/Geode/GeneratedSource.cpp.o.d -o bindings/CMakeFiles/GeodeBindings.dir/bindings/Geode/GeneratedSource.cpp.o -c /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSource.cpp
+[build] In file included from /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSource.cpp:5:
+[build] /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSourceArm.cpp:9554:15: error: no member named 'CCLightning' in namespace 'cocos2d'
+[build]  9554 | auto cocos2d::CCLightning::lightningWithStrikePoint(cocos2d::CCPoint p0, cocos2d::CCPoint p1, float p2) -> decltype(lightningWithStrikePoint(p0, p1, p2)) {
+[build]       |      ~~~~~~~~~^
+[build] /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSourceArm.cpp:9554:117: error: use of undeclared identifier 'lightningWithStrikePoint'
+[build]  9554 | auto cocos2d::CCLightning::lightningWithStrikePoint(cocos2d::CCPoint p0, cocos2d::CCPoint p1, float p2) -> decltype(lightningWithStrikePoint(p0, p1, p2)) {
+[build]       |                                                                                                                     ^
+[build] /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSourceArm.cpp:9563:15: error: no member named 'CCLightning' in namespace 'cocos2d'
+[build]  9563 | auto cocos2d::CCLightning::lightningWithStrikePoint(cocos2d::CCPoint p1) -> decltype(lightningWithStrikePoint(p1)) {
+[build]       |      ~~~~~~~~~^
+[build] /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSourceArm.cpp:9563:86: error: use of undeclared identifier 'lightningWithStrikePoint'
+[build]  9563 | auto cocos2d::CCLightning::lightningWithStrikePoint(cocos2d::CCPoint p1) -> decltype(lightningWithStrikePoint(p1)) {
+[build]       |                                                                                      ^
+[build] /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSourceArm.cpp:9572:15: error: no member named 'CCLightning' in namespace 'cocos2d'
+[build]  9572 | auto cocos2d::CCLightning::initWithStrikePoint(cocos2d::CCPoint p0, cocos2d::CCPoint p1, float p2) -> decltype(initWithStrikePoint(p0, p1, p2)) {
+[build]       |      ~~~~~~~~~^
+[build] /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSourceArm.cpp:9572:112: error: use of undeclared identifier 'initWithStrikePoint'
+[build]  9572 | auto cocos2d::CCLightning::initWithStrikePoint(cocos2d::CCPoint p0, cocos2d::CCPoint p1, float p2) -> decltype(initWithStrikePoint(p0, p1, p2)) {
+[build]       |                                                                                                                ^
+[build] /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSourceArm.cpp:9581:15: error: no member named 'CCLightning' in namespace 'cocos2d'
+[build]  9581 | auto cocos2d::CCLightning::initWithStrikePoint(cocos2d::CCPoint p1) -> decltype(initWithStrikePoint(p1)) {
+[build]       |      ~~~~~~~~~^
+[build] /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSourceArm.cpp:9581:81: error: use of undeclared identifier 'initWithStrikePoint'
+[build]  9581 | auto cocos2d::CCLightning::initWithStrikePoint(cocos2d::CCPoint p1) -> decltype(initWithStrikePoint(p1)) {
+[build]       |                                                                                 ^
+[build] /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSourceArm.cpp:9590:10: error: no member named 'CCLightning' in namespace 'cocos2d'
+[build]  9590 | cocos2d::CCLightning::CCLightning() : cocos2d::CCLightning(geode::CutoffConstructor, sizeof(cocos2d::CCLightning)) {
+[build]       | ~~~~~~~~~^
+[build] /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSourceArm.cpp:9604:10: error: no member named 'CCLightning' in namespace 'cocos2d'
+[build]  9604 | cocos2d::CCLightning::~CCLightning() {
+[build]       | ~~~~~~~~~^
+[build] /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSourceArm.cpp:9620:15: error: no member named 'CCLightning' in namespace 'cocos2d'
+[build]  9620 | auto cocos2d::CCLightning::strike() -> decltype(strike()) {
+[build]       |      ~~~~~~~~~^
+[build] /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSourceArm.cpp:9620:49: error: use of undeclared identifier 'strike'
+[build]  9620 | auto cocos2d::CCLightning::strike() -> decltype(strike()) {
+[build]       |                                                 ^
+[build] /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSourceArm.cpp:9629:15: error: no member named 'CCLightning' in namespace 'cocos2d'
+[build]  9629 | auto cocos2d::CCLightning::strikeFinished() -> decltype(strikeFinished()) {
+[build]       |      ~~~~~~~~~^
+[build] /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSourceArm.cpp:9629:57: error: use of undeclared identifier 'strikeFinished'
+[build]  9629 | auto cocos2d::CCLightning::strikeFinished() -> decltype(strikeFinished()) {
+[build]       |                                                         ^
+[build] /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSourceArm.cpp:9638:15: error: no member named 'CCLightning' in namespace 'cocos2d'
+[build]  9638 | auto cocos2d::CCLightning::strikeRandom() -> decltype(strikeRandom()) {
+[build]       |      ~~~~~~~~~^
+[build] /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSourceArm.cpp:9638:55: error: use of undeclared identifier 'strikeRandom'
+[build]  9638 | auto cocos2d::CCLightning::strikeRandom() -> decltype(strikeRandom()) {
+[build]       |                                                       ^
+[build] /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSourceArm.cpp:9647:15: error: no member named 'CCLightning' in namespace 'cocos2d'
+[build]  9647 | auto cocos2d::CCLightning::strikeWithSeed(uint64_t seed) -> decltype(strikeWithSeed(seed)) {
+[build]       |      ~~~~~~~~~^
+[build] /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSourceArm.cpp:9647:70: error: use of undeclared identifier 'strikeWithSeed'
+[build]  9647 | auto cocos2d::CCLightning::strikeWithSeed(uint64_t seed) -> decltype(strikeWithSeed(seed)) {
+[build]       |                                                                      ^
+[build] /Users/km7dev/geode-cgs/build/bindings/bindings/Geode/GeneratedSourceArm.cpp:9656:15: error: no member named 'CCLightning' in namespace 'cocos2d'
+[build]  9656 | auto cocos2d::CCLightning::draw() -> decltype(draw()) {
+[build]       |      ~~~~~~~~~^
+[build] fatal error: too many errors emitted, stopping now [-ferror-limit=]
+[build] 20 errors generated.
+[build] [92/224  36% :: 20.414] Building CXX object loader/CMakeFiles/geode-loader.dir/cmake_pch_x86_64.hxx.pch
+[build] [92/224  36% :: 20.430] Building CXX object loader/CMakeFiles/geode-loader.dir/cmake_pch_arm64.hxx.pch
+[build] [92/224  37% :: 21.777] Building CXX object loader/test/dependency/CMakeFiles/TestDependency.dir/__/__/__/_deps/json-src/src/external/dragonbox.cpp.o
+[build] [92/224  37% :: 21.802] Building CXX object loader/test/main/CMakeFiles/TestMod.dir/__/__/__/_deps/json-src/src/external/dragonbox.cpp.o
+[build] [92/224  37% :: 23.920] Building CXX object loader/test/dependency/CMakeFiles/TestDependency.dir/__/__/__/_deps/json-src/src/json.cpp.o
+[build] [92/224  38% :: 23.924] Building CXX object loader/test/main/CMakeFiles/TestMod.dir/__/__/__/_deps/json-src/src/json.cpp.o
+[build] [92/224  38% :: 24.179] Building CXX object loader/test/dependency/CMakeFiles/TestDependency.dir/__/__/__/entry.cpp.o
+[build] [92/224  39% :: 24.227] Building CXX object loader/test/main/CMakeFiles/TestMod.dir/__/__/__/entry.cpp.o
+[build] [92/224  39% :: 25.252] Building CXX object loader/CMakeFiles/geode-loader.dir/src/load.mm.o
+[build] [92/224  40% :: 28.035] Building CXX object loader/test/dependency/CMakeFiles/TestDependency.dir/main.cpp.o
+[build] [92/224  40% :: 29.115] Building CXX object loader/test/main/CMakeFiles/TestMod.dir/main.cpp.o
+[build] [92/224  41% :: 30.427] Building CXX object loader/CMakeFiles/geode-loader.dir/src/platform/Objcpp.mm.o
+[build] ninja: build stopped: subcommand failed.
+[proc] The command: /usr/local/bin/cmake --build /Users/km7dev/geode-cgs/build --config Debug --target all -- exited with code: 1
+[driver] Build completed: 00:00:30.468
+[build] Build finished with exit code 1

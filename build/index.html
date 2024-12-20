@@ -1,15 +1,106 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>km7dev</title>
-        <meta content="km7dev" property="og:title" />
+<html lang="en">
+<head>
+    <meta content="km7dev" property="og:title" />
         <meta content="uh uh uh site for km7dev lols" property="og:description" />
         <meta content="https://km7dev.tech" property="og:url" />
         <meta content="https://km7dev.tech/km7dev.png" property="og:image" />
         <meta content="#aeaeae" data-react-helmet="true" name="theme-color" />
         <link rel="icon" href="favicon.ico" />
-    </head>
-    <body>
-        <img src="https://km7dev.tech/km7dev.png" />
-    </body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>km7dev</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #272727;
+            line-height: 1.6;
+            color: eee;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #00000077;
+            box-shadow: 0 2px 10px rgba(0,0,0,.1);
+            position: fixed;
+            top: -14px;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 78px;
+        }
+        nav ul {
+            display: flex;
+        }
+        nav ul li {
+            list-style-type: none;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #eee;
+            font-weight: 500;
+        }
+        .home {
+            background-image: linear-gradient(to bottom right, #141323, #211720);
+            background-size: cover;
+            background-position: center;
+            height: calc(100vh - 60px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #EEE;
+        }
+        .home h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #FFF;
+        }
+        .home p {
+            font-size: 18px;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        section {
+            padding: 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a disabled="true" href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/links">Links</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="home">
+            <div class="container">
+                <h1>Hi, I am km7dev.</h1>
+                <img src="pfp-transparent.png"/>
+                <p>I'm a programmer in high school. I currently make Geometry Dash mods, although I have experience in many programming languages.</p>
+            </div>
+        </section>
+    </main>
+</body>
 </html>

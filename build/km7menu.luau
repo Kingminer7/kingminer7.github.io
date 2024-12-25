@@ -1,3 +1,5 @@
+-- loadstring(game:HttpGet("https://km7dev.tech/km7menu.luau"))
+
 --[[
        _             ______  _            
       | |           |____  || |           

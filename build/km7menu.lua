@@ -130,6 +130,7 @@ local function createWindow(name: string)
 	tb.Size = UDim2.new(0, 250 * ratio, 0, 30 * ratio)
 	tb.BorderSizePixel = 0
 	tb.Text = name
+	tb.Name = "Topbar"
 	tb.TextSize = 16 * ratio
 	tb.TextColor3 = Color3.fromRGB(255,255,255)
 	
@@ -174,7 +175,7 @@ local function createWindow(name: string)
 	  NewLine = function()
 	    sameLine = false
 	  end,
-	  Toggle = function(name: string, callback)
+	  Toggle = function(name: string, toggled: bool, callback)
 	    if newLine then
 	      compOffset = Vector2.new(8 * ratio, compOffset.Y + 33 * ratio)
 	    end
@@ -205,6 +206,7 @@ local function createWindow(name: string)
         lab.Text = name
         lab.BackgroundTransparency = 1
         lab.TextSize = 16 * ratio
+        lab.TextXAlignment = Enum.TextXAlignment.Left
         lab.Position = UDim2.fromOffset(36 * ratio, 0)
         lab.TextColor3 = Color3.fromRGB(255, 255, 255)
       end
@@ -214,5 +216,5 @@ local function createWindow(name: string)
 end
 local win = createWindow("Player")
 local toggle = win.Toggle("Test Toggle", false, function(val)
-  Console.Log("Test toggle toggled " .. val .. "!")
+  Console.Log("Test toggle toggled " .. if toggled == true then "true" else "false" .. "!")
 end)

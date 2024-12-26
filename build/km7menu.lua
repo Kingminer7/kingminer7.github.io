@@ -33,6 +33,7 @@ local services = {
 	run = game:GetService("RunService"),
 	repStor = game:GetService("ReplicatedStorage"),
 	plrs = game:GetService("Players"),
+	text = game:GetService("TextService"),
 }
 
 local plr = services.plrs.LocalPlayer
@@ -54,7 +55,7 @@ globalInstance.Destroy = function()
 	for id, obj in pairs(globalInstance.Instances) do
 		pcall(function()
 			if obj then
-			  obj:Destroy()
+				obj:Destroy()
 			end
 		end)
 	end
@@ -84,6 +85,8 @@ local CEnum = {
 
 local envType = CEnum.EnvironmentType.Unknown
 
+local data
+
 if services.run:IsStudio() then
 	envType = CEnum.EnvironmentType.Studio
 else
@@ -99,6 +102,14 @@ end
 Console.log("Running in a(n) " .. envType.Name .. " environment.")
 
 _G["GLOBAL_" ..hackName] = globalInstance
+
+if envType == CEnum.EnvironmentType.Exploit then
+	local s,e = pcall(function() data = services.http:JSONDecode(readfile(hackName .. "/save.json")) end)
+	if not s then data = {} end
+else
+	data = {}
+end
+print(services.http:JSONEncode(data))
 
 -- UI
 
@@ -131,14 +142,15 @@ local function createWindow(name: string)
 	tb.BorderSizePixel = 0
 	tb.Text = name
 	tb.Name = "Topbar"
-	tb.TextSize = 16 * ratio
+	tb.TextSize = 22 * ratio
 	tb.TextColor3 = Color3.fromRGB(255,255,255)
-	
+	tb.Font = Enum.Font.Montserrat
+	tb.AutoButtonColor = false
 	winOffset += Vector2.new(win.AbsoluteSize.X + 8 * ratio)
 	if winOffset.X + 250 * ratio > sg.AbsoluteSize.X then
 		winOffset = Vector2.new(30 * ratio, winOffset.Y + win.AbsoluteSize.Y + 8 * ratio)
 	end 
-	
+
 	spawn(function()
 		-- local inBounds = false
 		local offset
@@ -168,53 +180,93 @@ local function createWindow(name: string)
 	end)
 	local sameLine = true
 	return {
-	  Instance = win,
-	  SameLine = function()
-      sameLine = true
-	  end,
-	  NewLine = function()
-	    sameLine = false
-	  end,
-	  Toggle = function(name: string, toggled: bool, callback)
-	    if newLine then
-	      compOffset = Vector2.new(8 * ratio, compOffset.Y + 33 * ratio)
-	    end
-	    btn = Instance.new("TextButton")
-	    btn.Size = UDim2.fromOffset(24 * ratio, 24 * ratio)
-	    btn.Position = UDim2.fromOffset(compOffset.X, compOffset.Y)
-	    compOffset += Vector2.new(btn.Size.X.Offset + 2 * ratio, 0)
-	    btn.Text = if toggled == true then "✓" else ""
-	    btn.TextColor3 = Color3.fromRGB(255, 255, 255)
-	    btn.Name = "Toggle_" .. name
-	    btn.Parent = win
-	    btn.BackgroundColor3 = Color3.fromRGB(15, 82, 186)
-	    btn.BackgroundTransparency = .3
-	    btn.BorderSizePixel = 0
-	    
-	    local con = btn.MouseButton1Click:Connect(function()
-	        toggled = not toggled
-	        callback(toggled)
-	        btn.Text = if toggled == true then "✓" else ""
-	    end)
-     
-      globalInstance.Connections["Toggle.Click_"..name] = con
-	    
-      if string.sub(name, 1, 2) ~= "##" then
-        lab = Instance.new("TextLabel")
-        lab.Parent = btn
-        lab.Size = btn.Size
-        lab.Text = name
-        lab.BackgroundTransparency = 1
-        lab.TextSize = 16 * ratio
-        lab.TextXAlignment = Enum.TextXAlignment.Left
-        lab.Position = UDim2.fromOffset(36 * ratio, 0)
-        lab.TextColor3 = Color3.fromRGB(255, 255, 255)
-      end
-      return {Instance = btn}
-	  end
+		Instance = win,
+		SameLine = function()
+			sameLine = true
+		end,
+		NewLine = function()
+			sameLine = false
+		end,
+		Toggle = function(name: string, toggled: boolean, callback)
+			if win:FindFirstChild("Toggle_"..name) then return false end
+			if not sameLine then
+				compOffset = Vector2.new(8 * ratio, compOffset.Y + 33 * ratio)
+			end
+			local btn = Instance.new("TextButton")
+			btn.Size = UDim2.fromOffset(24 * ratio, 24 * ratio)
+			btn.Position = UDim2.fromOffset(compOffset.X, compOffset.Y)
+			btn.Font = Enum.Font.Montserrat
+			compOffset += Vector2.new(btn.Size.X.Offset + 4 * ratio, 0)
+			btn.Text = if toggled == true then "✓" else ""
+			btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+			btn.Name = "Toggle_" .. name
+			btn.Parent = win
+			btn.TextSize = 22 * ratio
+			btn.BackgroundColor3 = Color3.fromRGB(15, 82, 186)
+			btn.BackgroundTransparency = .3
+			btn.BorderSizePixel = 0
+
+			local con = btn.MouseButton1Click:Connect(function()
+				toggled = not toggled
+				callback(toggled)
+				btn.Text = if toggled == true then "✓" else ""
+			end)
+
+			globalInstance.Connections["Toggle.Click_"..name] = con
+
+			if string.sub(name, 1, 2) ~= "##" then
+				local lab = Instance.new("TextLabel")
+				lab.Parent = btn
+				lab.Size = btn.Size
+				lab.Text = name
+				lab.BackgroundTransparency = 1
+				lab.TextSize = 22 * ratio
+				lab.TextXAlignment = Enum.TextXAlignment.Left
+				lab.Position = UDim2.fromOffset(34 * ratio, 0)
+				lab.Font = Enum.Font.Montserrat
+				lab.TextColor3 = Color3.fromRGB(255, 255, 255)
+				compOffset += Vector2.new(lab.TextBounds.X + 12 * ratio, 0)
+			end
+			sameLine = false
+			return {Instance = btn}
+		end,
+		Button = function(name: string, callback)
+			if win:FindFirstChild("Button_"..name) then return false end
+			if not sameLine then
+				compOffset = Vector2.new(8 * ratio, compOffset.Y + 33 * ratio)
+			end
+			local btn = Instance.new("TextButton")
+			btn.Position = UDim2.fromOffset(compOffset.X, compOffset.Y)
+			compOffset += Vector2.new(btn.Size.X.Offset + 4 * ratio, 0)
+			btn.Text = name
+			btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+			btn.Name = "Button_" .. name
+			btn.Parent = win
+			btn.TextSize = 22 * ratio
+			btn.BackgroundColor3 = Color3.fromRGB(15, 82, 186)
+			btn.BackgroundTransparency = .3
+			btn.BorderSizePixel = 0
+			btn.Font = Enum.Font.Montserrat
+			btn.Size = UDim2.fromOffset(btn.TextBounds.X + 8, 24 * ratio)
+
+			local con = btn.MouseButton1Click:Connect(function()
+				callback()
+			end)
+
+			globalInstance.Connections["Button.Click_"..name] = con
+			
+			return {Instance = btn}
+		end,
 	}
 end
 local win = createWindow("Player")
-local toggle = win.Toggle("Test Toggle", false, function(val)
-  Console.Log("Test toggle toggled " .. if toggled == true then "true" else "false" .. "!")
+local toggle = win.Toggle("Test Toggle", data.test or false, function(val)
+	data.test = val
+	if envType == CEnum.EnvironmentType.Exploit then
+		writefile(hackName .. "/save.json", services.http:JSONEncode(data))
+	end
+end)
+
+local btn = win.Button("Test Button", function()
+	Console.log("Test button pressed!")
 end)

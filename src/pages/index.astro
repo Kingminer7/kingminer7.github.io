@@ -1,11 +1,30 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import MySiteLayout from '../layouts/main.astro';
 ---
-
-<Layout>
-	<Welcome />
-</Layout>
+  <style>
+    .about {
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    .about h1 {
+      padding: 0;
+      margin: 0;
+    }
+    .about img {
+      width: 14rem;
+      height: 14rem;
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+<MySiteLayout title="Home Page">
+  <div class="about">
+    <img src="km7dev-transparent.png"/>
+    <h1>km7dev</h1>
+    <p>
+      some idiot programmer idk
+    </p>
+  </div>
+</MySiteLayout>

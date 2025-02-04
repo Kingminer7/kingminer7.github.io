@@ -1,0 +1,37 @@
+---
+import MySiteLayout from '../layouts/main.astro';
+---
+  <style>
+    .about {
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    .about h1 {
+      padding: 0;
+      margin: 0;
+    }
+    .about img {
+      width: 14rem;
+      height: 14rem;
+      padding: 0;
+      margin: 0;
+    }
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+<MySiteLayout title="Home Page">
+  <div class="about">
+    <h1>i made these ig</h1>
+    <p>
+      <a href="https://geode-sdk.org/mods/km7dev.gdps-switcher">gdps switcher</a> <br>
+      <a href="https://geode-sdk.org/mods/km7dev.server_api">server api</a> <br>
+      <a href="https://geode-sdk.org/mods/km7dev.betterquests">betterquests</a> <br>
+      <a href="https://geode-sdk.org/mods/km7dev.quests_in_pause_menu">rewards in pause menu</a> <br>
+      <a href="https://geode-sdk.org/mods/km7dev.audio-offset-calculator">audio offset calculator</a> <br>
+    </p>
+  </div>
+</MySiteLayout>

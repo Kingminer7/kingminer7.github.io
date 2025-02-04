@@ -1,6 +1,10 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/km7dev-transparent.png';
+---
 <nav>
   <ul>
-    <a href="/"><img src="km7dev-transparent.png" /></a>
+    <a href="/"><Image src={logo} alt="km7dev" /></a>
     <li><a href="/geode">Geode Mods</a></li>
   </ul>
 </nav>

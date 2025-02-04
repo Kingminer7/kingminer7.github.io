@@ -1,10 +1,13 @@
 ---
 import MySiteLayout from '../layouts/main.astro';
+import { Image } from 'astro:assets';
+import logo from '../assets/km7dev-transparent.png';
 ---
   <style>
     .about {
       display: flex;
       align-items: center;
+      text-align: center;
       height: 100vh;
       flex-direction: column;
     }
@@ -18,13 +21,19 @@ import MySiteLayout from '../layouts/main.astro';
       padding: 0;
       margin: 0;
     }
+    a {
+      color: white;
+      text-decoration: underline;
+    }
   </style>
 <MySiteLayout title="Home Page">
   <div class="about">
-    <img src="km7dev-transparent.png"/>
+    <Image src={logo} alt="km7dev" />
     <h1>km7dev</h1>
     <p>
-      some idiot programmer idk
+      I'm a programmer in high school.
+      <br>
+      I currently make mods for Geometry Dash using <a href="https://geode-sdk.org/">Geode</a>.
     </p>
   </div>
 </MySiteLayout>

@@ -1,7 +1,11 @@
+---
+const { page } = Astro.props
+---
+
 <nav class="navbar">
-  <a href="/">Home</a>
-  <a href="/about">About</a>
-  <a href="/projects">Projects</a>
+  <a href="/" class={page === "home" ? "selected" : ""}>Home</a>
+  <a href="/about" class={page === "about" ? "selected" : ""}>About</a>
+  <a href="/projects" class={page === "projects" ? "selected" : ""}>Projects</a>
 </nav>
 
 <style>
@@ -13,11 +17,11 @@
   }
   .navbar > a {
     text-decoration: none;
-    color: #000;
-    padding: 0.5rem 1rem;
+		color: #eee;
+    padding: 0.5rem 1.2rem;
     border-radius: .5rem;
   }
-  .navbar > a:hover {
-    background-color: #ddd;
+  .navbar > a.selected, .navbar > a:hover:not(.selected) {
+    background-color: #4e3f5b5c;
   }
 </style>

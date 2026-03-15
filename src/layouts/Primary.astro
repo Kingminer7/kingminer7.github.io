@@ -1,9 +1,12 @@
 ---
 const { title = "unknown page - km7dev", desc = "i havent put a description but im debugging so ignore for now" /* "oops i forgot a description, please tell me!" */, color = "#a259cf" } = Astro.props;
+
+import { ViewTransitions } from "astro:transitions";
 ---
 <!doctype html>
 <html lang="en">
-	<head>
+  <head>
+    <ViewTransitions />
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -18,9 +21,10 @@ const { title = "unknown page - km7dev", desc = "i havent put a description but 
 		<title>{title}</title>
 	</head>
 	<body>
-		<div id="flash-layer"/>
-		<script>
-			document.addEventListener("DOMContentLoaded", () => {
+		<div transition:persist id="flash-layer"/>
+    <script transition:persist>
+      var hasStarted = false
+			document.addEventListener("astro:page-load", () => {
 				var flash = document.getElementById("flash-layer")
 
 				function doFlash() {
@@ -32,15 +36,23 @@ const { title = "unknown page - km7dev", desc = "i havent put a description but 
 					flash.style.left = -10 + Math.random() * 80 + "vw";
 					flash.style.top = -30 + Math.random() * 80 + "vh";
 					flash.style.animationDuration = time + "s";
-					flash.classList.add("doFlash")
+          flash.classList.add("doFlash")
+          localStorage.animationTimePassed = Date.now();
 					setTimeout(() => {
 						flash?.classList.remove("doFlash");
 						setTimeout(doFlash, 10000)
 					}, time * 2000);
 				}
-				doFlash();
-			})
-		</script>
+        
+        if (!hasStarted) {
+          doFlash();
+          hasStarted = true;
+        } else {
+          const timePassed = (Date.now() - localStorage.animationTimePassed) / 1000;
+          flash.style.animationDelay = `-${timePassed}s`;
+        }
+      })
+    </script>
 		<slot/>
 	</body>
 </html>

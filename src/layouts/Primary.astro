@@ -1,5 +1,5 @@
 ---
-const { title, desc } = Astro.props;
+const { title = "unknown page - km7dev", desc = "oops i forgot a description, please tell me!", color = "#a259cf" } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -12,6 +12,7 @@ const { title, desc } = Astro.props;
 
 		<meta property="og:title" content=`${title}`/>
 		<meta property="og:description" content=`${desc}`/>
+		<meta property="og:theme-color" content=`${color}`/>
 		<meta property="og:type" content="website"/>
 
 		<title>{title}</title>

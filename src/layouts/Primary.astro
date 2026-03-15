@@ -1,5 +1,5 @@
 ---
-const { title = "unknown page - km7dev", desc = "oops i forgot a description, please tell me!", color = "#a259cf" } = Astro.props;
+const { title = "unknown page - km7dev", desc = "i havent put a description but im debugging so ignore for now" /* "oops i forgot a description, please tell me!" */, color = "#a259cf" } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -12,8 +12,8 @@ const { title = "unknown page - km7dev", desc = "oops i forgot a description, pl
 
 		<meta property="og:title" content=`${title}`/>
 		<meta property="og:description" content=`${desc}`/>
-		<meta property="og:theme-color" content=`${color}`/>
 		<meta property="og:type" content="website"/>
+		<meta property="theme-color" content=`${color}`/>
 
 		<title>{title}</title>
 	</head>
